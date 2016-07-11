@@ -1,0 +1,214 @@
+
+/*
+@auther:;
+@date:2016/5/15;
+@version:;
+ */
+
+body {
+	margin: 0;
+} 
+
+ul,li {
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+/*common*/
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+.clear::after{
+	content:"";
+	display:block;
+	visibility: hidden;
+	clear:both;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+}
+
+
+
+.container{
+width:100%;
+height: 100%;
+}
+
+.header{
+	width:1000px;
+	height:100px;
+	margin:0 auto;
+}
+
+.header .header-top{
+	width:100%;
+	height:125px;
+	margin:0 auto;
+
+}
+
+.header-top .logo{
+	width: 300px;
+	height:80px;
+	background:  url(../img/logo.png) repeat-x 0 0;
+
+	margin-top: 20px;
+	float:left;
+}
+
+.header .top-right{
+	width:500px;
+	height:90%;
+	
+	float:right;
+}
+
+.header .top-right a{
+	color:#999;
+	text-decoration: none;
+    font-size:13px;
+}
+
+
+.header .top-right a:hover{
+	color:#f60;
+}
+.header .top-right span{
+	color:#999;
+	margin:0 5px;
+
+
+}
+
+.mid{
+	width: 100%;
+	height:50px;
+	background: #3266cc;
+	margin:20px 0 0 0;
+
+}
+
+.mid-wrap{
+	width: 1000px;
+	height:100%;
+	margin:0 auto;
+
+}
+.mid-wrap li{
+	width:90px;
+	height:50px;
+	list-style: none;
+	display: block;
+	float:left;
+	text-align: center;
+	margin:0 10px;
+}
+
+.mid-wrap li a{
+	
+	line-height:50px;
+	font-size:16px;
+	text-decoration: none;
+	color:#fff;
+	
+
+}
+
+.mid-wrap li:hover{
+	background: #2355b6;
+}
+/*.banner{
+	width:1000px;
+	height: 300px;
+	border:solid 1px;
+	margin-top:10px;
+}
+*/
+	#box {
+		margin: 10px auto;
+		width: 1000px;
+		height:300px;
+		position: relative;
+	}
+
+	#box li {
+		position: absolute;
+		/*cursor: pointer;*/
+		z-index: -1;
+	}
+
+	#box #prev,#box #next {
+		position: absolute;
+		top: 40%;
+		line-height: 60px;
+		width:50px;
+		text-align: center;
+		display: block;
+		background-color: #666;
+		color: #fff;
+		font-size: 40px;
+		opacity: 0.5;
+		cursor: pointer;
+		z-index: 2;
+
+	}
+	#box #prev:hover,#box #next:hover {
+		background-color: #000;
+		opacity: 0.8;
+	}
+	#box #prev {
+		left: 0px;
+	}
+
+	#box #next {
+		right: 0px;
+	}
+
+
+
+.footer{
+	width:1000px;
+	height:90px;
+	margin:0 auto;
+	background: #1b78cf;
+}
+
+.footer .module{
+	border-right:solid 1px #fff;
+}
+.footer a{
+	width: 100px;
+	height: 80px;
+	margin:10px 5px 0 0;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	float: left;
+}
+
+
+.footer a span{
+	display: block;
+	margin:0 auto;
+	text-align: center;
+}
+
+.footer a span:hover{
+	color:#b6c8fc;
+}

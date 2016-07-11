@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 		
+	<link rel="stylesheet" href="../css/index.css">
+	<script type="text/javascript">
+	window.onload = function() {
+
+		var oPrev = document.getElementById("prev");
+		var oNext = document.getElementById("next");
+
+		var oBox = document.getElementById("box");
+		var oLi = oBox.getElementsByTagName('li');
+
+		//reset
+		var num = 0;
+		oLi[num].style.zIndex = "1";
+
+
+		oPrev.onclick = function() {
+			num--;
+			if( num<0 ) {	
+				num = 3;
+			}
+			for( var i=0; i<oLi.length; i++ ) {
+				oLi[i].style.zIndex = "-1";
+			}
+			oLi[num].style.zIndex = "1";
+		};
+		oNext.onclick = function() {
+			num++;
+			if( num>3 ) {
+				num = 0;
+			}
+			for( var i=0; i<oLi.length; i++ ) {
+				oLi[i].style.zIndex = "-1";
+			}
+			oLi[num].style.zIndex = "1";
+		};
+	}
+	</script>
+	</head>
+	<body>
+	<div class="container">
+		<div class="header">
+			<div class="header-top">
+				<a class="logo" href="#"></a>
+				<div class="top-right">
+					<a href="#">English</a>
+					<span>|<span>
+					<a href="#">Русский язык</a>
+					<span>|<span>
+					<a href="#"> 한국어</a>
+					<span>|<span>
+					<a href="#">信息门户</a>
+					<span>|<span>
+					<a href="#">应用门户</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="mid">
+			<div class="mid-wrap">
+			<ul>
+				<li>
+				<a href="#">首页</a>
+
+				</li>
+				<li>
+				<a href="#">校园总揽</a>
+				<img src="../img/z.png">
+				</li>
+				<li>
+				<a href="#">组织机构</a>
+				<img src="../img/z.png">
+				</li>
+				<li>
+				<a href="#">教师队伍</a>
+				<img src="../img/z.png">
+				</li>
+				<li>
+				<a href="#">人才培养</a>
+				<img src="../img/z.png">
+				</li>
+				<li>
+				<a href="#">招生就业</a>
+				<img src="../img/z.png">
+				</li>
+				<li>
+				<a href="#">科学研究</a>
+				<img src="../img/z.png">
+				</li>
+				<li>
+				<a href="#">校友总会</a>
+				</li>
+				<li>
+				<a href="#">信息公开</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="banner">
+		<ul id="box">
+			<span id="prev"><</span>
+			<span id="next">></span>
+			<li>
+				<a href="#">
+					<img src="../img/2.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../img/1.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../img/3.jpg">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../img/4.jpg">
+				</a>
+			</li>
+		</ul>
+		</div>
+
+		<div class="footer">
+			<a href="#" style="margin-left:20px">
+				<div class="module">
+					<span>
+					<img src="../img/a.png">
+					</span>
+					<span>新闻网
+					</span>
+				</div>
+
+			</a>
+
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/b.png">
+					</span>
+					<span>学术荟萃
+					</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/c.png">
+					</span>
+					<span>数学图书
+					</span>
+				</div>
+			</a>
+			
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/c.png">
+					</span>
+					<span>黑大校报
+					</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/d.png">
+					</span>
+					<span>新媒体
+					</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/e.png">
+					</span>
+					<span>人才招聘
+					</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/f.png">
+					</span>
+					<span>国际交流
+					</span>
+				</div>
+			</a>
+			<a href="#">
+				<div class="module">
+					<span>
+					<img src="../img/g.png">
+					</span>
+					<span>服务平台
+					</span>
+				</div>
+			</a>
+			<a href="#">
+				<div>
+					<span>
+					<img src="../img/h.png">
+					</span>
+					<span>站点导航
+					</span>
+				</div>
+			</a>
+		</div>
+	</div>
+		
+	</body>
+</html>
